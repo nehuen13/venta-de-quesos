@@ -13,7 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 
 <body>
 
@@ -47,8 +50,8 @@
         <section class="section">
                 <h1 class="texto"><span>Lacteos</span></h1>
                 <article class="article">
-                    <p class="texto__1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla harum explicabo autem et ea porro odio nostrum ullam ab, laboriosam, repudiandae quas! Corporis libero pariatur delectus voluptates tempore deserunt quasi nisi laudantium minus est sit numquam, laboriosam placeat voluptatum quibusdam rem dolor excepturi sequi sint! Nobis sint eaque tenetur fugit? </p>
-                    <img class="foto" src="assets/multimedia/queso4.jpg" alt="produto con texto">
+                    <p class="texto__1" data-aos="fade-up-right" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla harum explicabo autem et ea porro odio nostrum ullam ab, laboriosam, repudiandae quas! Corporis libero pariatur delectus voluptates tempore deserunt quasi nisi laudantium minus est sit numquam, laboriosam placeat voluptatum quibusdam rem dolor excepturi sequi sint! Nobis sint eaque tenetur fugit? </p>
+                    <img  class="foto"  data-aos="fade-left" src="assets/multimedia/queso4.jpg" alt="produto con texto">
                 </article>
         </section>
         
@@ -74,6 +77,8 @@
         </footer>
     </div>
 
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
