@@ -354,3 +354,27 @@ ul{
     font-weight: bold;
 }
 
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+.color{
+    background-color: #f2c3298e;
+}
+
+.btn-primary{
+    background-color:#ffee0094 ;
+    border-color: #ffee0094;
+    transition: all 0.20s ease-in-out;
+    font-weight: bold;
+    color: black;
+}
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover{
+    background-color: #ffee00;
+    border-color: #ffee00;
+    transform: scale(0.15s);
+    color: black;
+}
+
