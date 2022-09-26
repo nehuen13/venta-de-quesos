@@ -382,3 +382,18 @@ ul{
     height: 100px;
 }
 
+
+
+.centro{
+    margin-left: 100px;
+}
+
+.animacion img{
+    filter: grayscale(100%);
+    transition: all 0,25s;
+}
+
+.animacion img:hover{
+    filter: none;
+    
+}
