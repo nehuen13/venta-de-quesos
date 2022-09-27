@@ -49,6 +49,8 @@ ul{
     "lacteos lacteos"
     "footer footer"
     ;
+    overflow-x: hidden
+    ;
 }
 
 
@@ -258,17 +260,13 @@ ul{
         display: flex;
         flex-wrap: wrap;
     }
-}  
+    
+}
 
 
 @media screen and (max-width:768px){
     
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
-    }
+    
     .main{
         justify-content: space-around;
         align-items: center;
@@ -285,6 +283,7 @@ ul{
         justify-content: space-around;
         align-items: center;
     }
+
 } 
 
 .contenedorContacto{
@@ -354,3 +353,47 @@ ul{
     font-weight: bold;
 }
 
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+.color{
+    background-color: #ffc400;
+}
+
+.btn-primary{
+    background-color:#000000 ;
+    border-color: #000000;
+    transition: all 0.20s ease-in-out;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover{
+    background-color: #fdcf00;
+    border-color: #ffd000;
+    transform: scale(0.15s);
+    color: rgb(255, 255, 255);
+}
+
+.logoFooter{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.centro{
+    margin-left: 100px;
+}
+
+.animacion img{
+    filter: grayscale(100%);
+    transition: all 0,25s;
+}
+
+.animacion img:hover{
+    filter: none;
+    
+}
