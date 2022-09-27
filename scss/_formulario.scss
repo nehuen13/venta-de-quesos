@@ -1,0 +1,14 @@
+.btn-primary{
+    background-color:#000000 ;
+    border-color: #000000;
+    transition: all 0.20s ease-in-out;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover{
+    background-color: #fdcf00;
+    border-color: #ffd000;
+    transform: scale(0.15s);
+    color: rgb(255, 255, 255);
+}

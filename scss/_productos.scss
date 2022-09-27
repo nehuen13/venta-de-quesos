@@ -1,0 +1,12 @@
+.centro{
+    margin-left: 100px;
+    img{
+        filter: grayscale(100%);
+        transition: all 0,25s;
+        &:hover{
+            filter: none;
+            
+        }
+    }
+}
+

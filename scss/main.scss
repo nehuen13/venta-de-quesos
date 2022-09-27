@@ -1,0 +1,108 @@
+@import "navbar";
+@import "formulario";
+@import "productos";
+@import "sectionindex";
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    a{
+        text-decoration: none;
+    }
+}
+
+.contenedor{
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr 0.30fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "menu menu"
+    "fotos fotos"
+    "lacteos lacteos"
+    "footer footer"
+    ;
+    overflow-x: hidden
+    ;
+}
+
+
+.header{
+    grid-area: menu;
+}
+
+.main{
+    grid-area: fotos; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section{
+    grid-area: lacteos;
+
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    .texto{
+        border: double black;
+    }
+    .texto__1{
+        text-align: left;
+    }
+    .foto{
+        margin: 0px;
+        width: 300px;
+        height: 200px;
+        animation-name: grises;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+
+}
+
+@keyframes grises{
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 70%;
+    }
+    40%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.logoFooter{
+    width: 100px;
+    height: 100px;
+}
+
+
+

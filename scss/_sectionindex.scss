@@ -1,0 +1,41 @@
+.section{
+    .texto h1{
+        margin-bottom: 20px;
+    }
+    .article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        .texto__1{
+            text-align: left;
+        }
+        .foto{
+            margin: 0px;
+            width: 300px;
+            height: 200px;
+            animation-name: grises;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+        }
+    
+    }
+}
+
+@keyframes grises{
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 70%;
+    }
+    40%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
