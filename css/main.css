@@ -1,6 +1,13 @@
-.navbar .logo {
-  width: auto;
-  height: 100px; }
+@media screen and (max-width: 500px) {
+  .textoServicios {
+    font-size: 2rem;
+    padding: .8rem 0 .4rem; }
+  .galeria {
+    grid-template-areas: "img1 img1" "img2 img2" "img3 img3" "img4 img4" "img6 img6" "img7 img7"; }
+  .centro {
+    margin-left: 0px; }
+  .section .article {
+    display: none; } }
 
 .color {
   background-color: #ffc400; }
@@ -69,16 +76,7 @@ header {
     text-decoration: none; }
 
 .contenedor {
-  display: grid;
-  grid-template-rows: 0.25fr 1fr 1fr 0.30fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-template-areas: "menu menu" "fotos fotos" "lacteos lacteos" "footer footer";
   overflow-x: hidden; }
-
-.header {
-  grid-area: menu; }
 
 .main {
   grid-area: fotos;
@@ -92,23 +90,6 @@ header {
 .footer {
   grid-area: footer; }
 
-.article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px; }
-  .article .texto {
-    border: double black; }
-  .article .texto__1 {
-    text-align: left; }
-  .article .foto {
-    margin: 0px;
-    width: 300px;
-    height: 200px;
-    animation-name: grises;
-    animation-duration: 2s;
-    animation-timing-function: linear; }
-
 @keyframes grises {
   0% {
     opacity: 0%; }
@@ -121,6 +102,76 @@ header {
   100% {
     opacity: 100%; } }
 
-.logoFooter {
-  width: 100px;
-  height: 100px; }
+.logoFooter, .navbar .logo {
+  height: 100px;
+  width: auto; }
+
+.galeria {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: .8em;
+  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img6 img6 img4 img4" "img6 img6 img7 img7" "img6 img6 img7 img7"; }
+  .galeria .galeria__imagen--img1 {
+    grid-area: img1; }
+  .galeria .galeria__imagen--img2 {
+    grid-area: img2; }
+  .galeria .galeria__imagen--img3 {
+    grid-area: img3; }
+  .galeria .galeria__imagen--img4 {
+    grid-area: img4; }
+  .galeria .galeria__imagen--img5 {
+    grid-area: img5; }
+  .galeria .galeria__imagen--img6 {
+    grid-area: img6; }
+  .galeria .galeria__imagen--img7 {
+    grid-area: img7; }
+  .galeria .galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.textoServicios {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: .8rem;
+  padding-bottom: .4rem; }
+
+.textoServicios1 {
+  text-align: center;
+  padding-left: 30px; }
+
+@media screen and (max-width: 500px) {
+  .textoServicios {
+    font-size: 2rem;
+    padding: .8rem 0 .4rem; }
+  .textoServicios1 {
+    padding-right: 20px; }
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1" "img2" "img2" "img3" "img3" "img4" "img6" "img7"; }
+  .centro {
+    margin-left: 0px; }
+  .section .article {
+    flex-direction: column; }
+    .section .article .texto__1 {
+      text-align: center; }
+    .section .article .foto {
+      margin: 0px;
+      width: 300px;
+      height: 200px;
+      animation-name: grises;
+      animation-duration: 2s;
+      animation-timing-function: linear; } }
+
+@media screen and (max-width: 768px) {
+  .textoServicios {
+    font-size: 2rem;
+    padding: .8rem 0 .4rem; }
+  .textoServicios1 {
+    padding-right: 20px; }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img1 img1" "img2 img2" "img2 img2" "img3 img3" "img3 img3" "img4 img4" "img6 img6" "img7 img7"; } }

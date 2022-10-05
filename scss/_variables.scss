@@ -1,0 +1,17 @@
+@mixin tamaños($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin grid($d, $tc, $ar,) {
+    display: $d;
+    grid-template-columns: $tc;
+    grid-auto-rows: $ar;
+}
+
+
+$estilos:(
+    color:#ffc400,
+    tamañoTexto: 3rem,
+    alineacion: center,
+)

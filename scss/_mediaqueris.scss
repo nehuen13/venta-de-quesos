@@ -1,0 +1,24 @@
+@media screen and (max-width:500px){
+    .textoServicios{
+        font-size: 2rem;
+        padding: .8rem 0 .4rem;
+    }
+    .galeria{
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img2"
+        "img3 img3"
+        "img4 img4"
+        "img6 img6"
+        "img7 img7"
+        ;
+    }
+    .centro{
+        margin-left: 0px;
+    }
+    .section{
+        .article{
+            display: none;
+        }
+    }
+}
