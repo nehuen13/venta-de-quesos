@@ -14,7 +14,6 @@ body{
 }
 
 header{
-    position: sticky;
     top: 0%;
     a{
         text-decoration: none;
@@ -109,13 +108,23 @@ header{
 }
 .textoServicios{
     text-align: map-get($map: $estilos, $key:alineacion );
-    font-size: map-get($map: $estilos, $key:tamañoTexto );
+    font-size: map-get($map: $estilos, $key:tamañotextoGrande );
     padding-top: .8rem;
     padding-bottom: .4rem;
 }
 .textoServicios1{
     text-align: map-get($map: $estilos, $key:alineacion );
     padding-left: 30px;
+}
+.imagenH{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    .imagenHistoria{
+        height: 500px;
+        width: 600px;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -158,6 +167,11 @@ header{
             }
         }
     }
+    .imagenH{
+        .imagenHistoria{
+            height: none;
+        }
+    }
 }
 
 @media screen and (max-width:768px){
@@ -182,3 +196,33 @@ header{
         ;
     }
 }
+
+.texto{
+    text-align: map-get($map: $estilos, $key:alineacion );
+}
+
+.mapa{
+    margin-top: 60px;
+}
+
+    
+.button{
+    color: black;
+}
+    
+.accordion-button:not(.collapsed) {
+    color: black (--bs-accordion-active-color);
+    box-shadow: yellow var(--bs-accordion-btn-focus-box-shadow);
+}
+    
+.accordion--bs-accordion-btn-focus-box-shadow{
+    color: yellow;
+    border-color: yellow;
+}
+    
+.accordion--bs-accordion-active-bg{
+    color: #ffc107;
+    background-color: #ffc107;
+} 
+
+

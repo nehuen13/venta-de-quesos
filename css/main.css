@@ -33,8 +33,15 @@
     .centro img:hover {
       filter: none; }
 
-.section .texto h1 {
-  margin-bottom: 20px; }
+.section .texto {
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+.section .italica {
+  text-align: start;
+  font-size: 1rem;
+  margin: 20px;
+  padding: 20px; }
 
 .section .article {
   display: flex;
@@ -42,7 +49,8 @@
   align-items: center;
   padding: 0 50px; }
   .section .article .texto__1 {
-    text-align: left; }
+    text-align: left;
+    margin: 20px; }
   .section .article .foto {
     margin: 0px;
     width: 300px;
@@ -70,7 +78,6 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 header {
-  position: sticky;
   top: 0%; }
   header a {
     text-decoration: none; }
@@ -143,6 +150,14 @@ header {
   text-align: center;
   padding-left: 30px; }
 
+.imagenH {
+  display: flex;
+  justify-content: center;
+  justify-items: center; }
+  .imagenH .imagenHistoria {
+    height: 500px;
+    width: 600px; }
+
 @media screen and (max-width: 500px) {
   .textoServicios {
     font-size: 2rem;
@@ -164,7 +179,9 @@ header {
       height: 200px;
       animation-name: grises;
       animation-duration: 2s;
-      animation-timing-function: linear; } }
+      animation-timing-function: linear; }
+  .imagenH .imagenHistoria {
+    height: none; } }
 
 @media screen and (max-width: 768px) {
   .textoServicios {
@@ -175,3 +192,24 @@ header {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img1 img1" "img2 img2" "img2 img2" "img3 img3" "img3 img3" "img4 img4" "img6 img6" "img7 img7"; } }
+
+.texto {
+  text-align: center; }
+
+.mapa {
+  margin-top: 60px; }
+
+.button {
+  color: black; }
+
+.accordion-button:not(.collapsed) {
+  color: black --bs-accordion-active-color;
+  box-shadow: yellow var(--bs-accordion-btn-focus-box-shadow); }
+
+.accordion--bs-accordion-btn-focus-box-shadow {
+  color: yellow;
+  border-color: yellow; }
+
+.accordion--bs-accordion-active-bg {
+  color: #ffc107;
+  background-color: #ffc107; }

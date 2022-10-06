@@ -1,6 +1,14 @@
 .section{
-    .texto h1{
+    .texto{
         margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .italica{
+        text-align: map-get($map: $estilos, $key:alineacionDos );
+        font-size: map-get($map: $estilos, $key:tamañotextoChico);
+        margin: 20px;
+        padding: 20px;
+        
     }
     .article{
         display: flex;
@@ -9,6 +17,7 @@
         padding: 0 50px;
         .texto__1{
             text-align: left;
+            margin: 20px;
         }
         .foto{
             margin: 0px;
